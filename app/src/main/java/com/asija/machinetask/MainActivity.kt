@@ -123,6 +123,8 @@ class MainActivity : AppCompatActivity() {
         //commit in test branching for testing conflict
         
         //remote_changes
+        
+        //one more change
 
     }
 
