@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
 
         val secret = "MEECAQAwEwYHKoZIzj0CAQYIKoZIzj0DAQcEJzAlAgEBBCD0KvVxLJEzRBQmcEXf\n" +
                 "D2okKCNoUwZY8fc1/1Z4aJuJdg=="
-        val header = CustomAuthHeader(Algorithm.ES256.name, "KHZY4KKQQM", "JWT")
+        val header = CustomAuthHeader(Algorithm.ES256.name, "KHZY4KKQQM","JWT")
         val payload = CustomJWTAuthPayload("ULQ5N42B6N", nowSeconds, exp)
         val payloadString = jsonEncoder.toJson(payload)
         Log.d(TAG, "encodeToJWT: $payloadString")
@@ -119,7 +119,8 @@ class MainActivity : AppCompatActivity() {
             JWT.token(Algorithm.ES256, header, payload, secret, jsonEncoder, encoder, decoder)
         Log.d(TAG, "encodeToJWT: $token")
         val t = JWT.decode(token, jsonDecoder, decoder)
-        //commit in master branch for merge conflict testing
+
+        //commit in test branching
 
     }
 
