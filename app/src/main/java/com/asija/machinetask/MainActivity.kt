@@ -118,7 +118,6 @@ class MainActivity : AppCompatActivity() {
         val token =
             JWT.token(Algorithm.ES256, header, payload, secret, jsonEncoder, encoder, decoder)
         Log.d(TAG, "encodeToJWT: $token")
-
         val t = JWT.decode(token, jsonDecoder, decoder)
 
     }
