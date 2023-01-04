@@ -120,7 +120,7 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "encodeToJWT: $token")
         val t = JWT.decode(token, jsonDecoder, decoder)
 
-        //commit in test branching
+        //commit in master branch for merge conflict testing
 
     }
 
